@@ -1,9 +1,9 @@
 {
   "name": "Facilita Estudante LITE",
   "version": "v2.0",
-  "type": "bet",
+  "type": "beta",
   "description": "Esta versão traz a nova interface unificada baseada no Material 3 Expressive, melhorias de desempenho em dispositivos com pouca memória RAM e correções críticas de segurança.",
   "icon_url": "assets/icons/app_icon.png",
-  "changelog_url": "[https://github.com/inter-estudios-developers/intervixus-api/blob/main/changelogs/v2.0.md](https://github.com/inter-estudios-developers/intervixus-api/blob/main/changelogs/v2.0.md)",
-  "download_url": "[https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V2/Facilita.LITE.2.0.apk](https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V2/Facilita.LITE.2.0.apk)"
+  "changelog_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/changelogs/v2.0.md",
+  "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V2/Facilita.LITE.2.0.apk"
 }

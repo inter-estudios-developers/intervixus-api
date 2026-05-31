@@ -2,14 +2,7 @@
   "name": "Facilita Estudante LITE",
   "version": "3.0",
   "type": "rel",
-  "description": "
-Novo sistemas e integrações
-Sistema de atualizaçãoes
-Sistema de segurança melhorado
-Login e fluxos do HTML corrigido
-Adaptabilidade e user agent adicionados
-Sistema de atualizaçãoes melhorado
-Modais de avisos refeitos ",
+  "description": " Novo sistemas e integrações: Sistema de atualizaçãoes, Sistema de segurança melhorado, Login e fluxos do HTML corrigido, Adaptabilidade e user agent adicionados, Sistema de atualizaçãoes melhorado, Modais de avisos refeitos ",
   "icon_url": "https://facilita-estudante-lite.web.app/icon.png",
   "changelog_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/changelogs/v2.0.md",
   "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V3/Facilita.LITE.3.0.apk"

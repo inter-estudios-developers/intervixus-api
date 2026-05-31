@@ -3,7 +3,7 @@
   "version": "4.0",
   "type": "rel",
   "description": "Está atualização traz novos recursos, novidades, erros corrigidos.",
-  "icon_url": "assets/icons/app_icon.png",
+  "icon_url": "https://png.pngtree.com/png-vector/20210830/ourmid/pngtree-red-warning-sign-icon-png-image_3833369.jpg",
   "changelog_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/changelogs/v2.0.md",
   "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V3/Facilita.LITE.2.0.apk"
 }

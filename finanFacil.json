@@ -1,0 +1,9 @@
+{
+  "name": "Facilita Estudante LITE",
+  "version": "9.0",
+  "type": "rel",
+  "description": "Primeiro teste do sistema de sincronização",
+  "icon_url": "https://facilita-estudante-lite.web.app/icon.png",
+  "changelog_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/changelogs/v2.0.md",
+  "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V3/Facilita.LITE.3.0.apk"
+}

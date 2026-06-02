@@ -3,7 +3,7 @@
   "version": "4.1",
   "type": "rel",
   "description": " Novo sistemas e integrações: Sistema de atualizaçãoes, Sistema de segurança melhorado, Login e fluxos do HTML corrigido, Adaptabilidade e user agent adicionados, Sistema de atualizaçãoes melhorado, Modais de avisos refeitos ",
-  "privacy_terms_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/termos.md"
+  "privacy_terms_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/termos.md",
   "icon_url": "https://facilita-estudante-lite.web.app/icon.png",
   "changelog_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/changelogs/v2.0.md",
   "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V4.1/Facilita.LITE.4.1.apk"

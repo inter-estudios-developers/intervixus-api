@@ -1,6 +1,6 @@
 {
   "name": "Facilita Estudante LITE",
-  "version": "4.4",
+  "version": "4.3",
   "type": "rel",
   "description": "Melhoria na barra de navegação, melhoria no desing geral do aplicativo, correções do user agent e comunicação com o servidor e site melhorado",
   "privacy_terms_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/termos.md",

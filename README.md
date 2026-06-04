@@ -1,2 +1,2 @@
 # intervixus-api
-Sistema integro de login e solicitações e credencias do Firebase
+Sistema de conexão app e servidor para checagem de versões, downloads de atualizaçãoes e demasiados vis js e Jsons do servidor.

@@ -1,6 +1,6 @@
 {
   "name": "Facilita Estudante LITE",
-  "version": "4.6",
+  "version": "4.1",
   "type": "rel",
   "description": "Correção do desing do aplicativo, múltiplos pathers de segurança adicionados, correções críticas, sistema anti erros melhorados, política de privacidade adicionad, sistema de coleta de erros pra correções futuras, compatibilidade com seviços e chamadas diretas ao site melhorados, notificaçào de verificaçães de updates e baixando adcionados, oções e sistema mais resiliênte a quedas do wi-fi, interface redesenhado e refeita, correção do ícone do aplicativo ",
   "privacy_terms_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/termos.md",

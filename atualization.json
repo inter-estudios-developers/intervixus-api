@@ -1,10 +1,10 @@
 {
   "name": "Facilita Estudante LITE",
-  "version": "4.5",
-  "type": "bet",
+  "version": "4.6",
+  "type": "rel",
   "description": "Correção do desing do aplicativo, múltiplos pathers de segurança adicionados, correções críticas, sistema anti erros melhorados, política de privacidade adicionad, sistema de coleta de erros pra correções futuras, compatibilidade com seviços e chamadas diretas ao site melhorados, notificaçào de verificaçães de updates e baixando adcionados, oções e sistema mais resiliênte a quedas do wi-fi, interface redesenhado e refeita, correção do ícone do aplicativo ",
   "privacy_terms_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/termos.md",
   "icon_url": "https://facilita-estudante-lite.web.app/icon.png",
   "changelog_url": "https://github.com/inter-estudios-developers/intervixus-api/blob/main/changelogs/v2.0.md",
-  "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V4.5/Facilita.LITE.4.5.apk"
+  "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/FCL-V4.6/Facilita.LITE.4.6.apk"
 }

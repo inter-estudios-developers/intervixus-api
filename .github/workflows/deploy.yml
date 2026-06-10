@@ -8,48 +8,25 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+    - name: Passo 1 - Baixar código do repositório
+      uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+    - name: Passo 2 - Instalar Firebase CLI
+      run: npm install -g firebase-tools
 
-      - name: Install Firebase CLI
-        run: |
-          npm install -g firebase-tools
-
-      - name: Deploy Hosting (isolated)
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: |
-          set -euo pipefail
-
-          if [ -z "${FIREBASE_TOKEN}" ]; then
-            echo "Missing FIREBASE_TOKEN secret";
-            exit 1;
-          fi
-
-          echo "Installing Firebase CLI..."
-          firebase --version || true
-
-          # Non-interactive authentication for GitHub Actions.
-          # Using the token directly avoids browser-based login.
-          firebase login:ci --token "${FIREBASE_TOKEN}"
-
-          # IMPORTANT: Isolate deploy strictly to this client's Hosting target.
-          # The actual value MUST be defined in the client's repository.
-          # Recommended: set a repo variable named ID_DO_SITE_DELE.
-          TARGET_ID="${{ vars.ID_DO_SITE_DELE }}"
-          if [ -z "${TARGET_ID}" ] || [ "${TARGET_ID}" = "ID_DO_SITE_DELE" ]; then
-            echo "Hosting target id (ID_DO_SITE_DELE) is not set correctly in the client repo.";
-            exit 1;
-          fi
-
-          firebase deploy --only "hosting:${TARGET_ID}"
-
-
+    - name: Passo 3 - Publicar no Firebase Hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: |
+        if [ -z "$FIREBASE_TOKEN" ]; then
+          echo "Erro: A Secret FIREBASE_TOKEN não foi configurada ou está vazia no GitHub!"
+          exit 1
+        fi
+        
+        # Mostra a versão instalada no log para conferência
+        firebase --version
+        
+        # COMANDO DIRETO: Usa o token direto no deploy, eliminando o erro de login:ci
+        firebase deploy --only hosting --token "$FIREBASE_TOKEN"

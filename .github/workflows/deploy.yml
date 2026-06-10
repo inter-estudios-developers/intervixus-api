@@ -1,0 +1,43 @@
+name: Deploy Firebase Hosting (Isolated)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Firebase CLI
+        run: |
+          npm install -g firebase-tools
+
+      - name: Deploy Hosting (isolated)
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          if [ -z "$FIREBASE_TOKEN" ]; then
+            echo "Missing FIREBASE_TOKEN secret";
+            exit 1;
+          fi
+          firebase --version
+          echo "$FIREBASE_TOKEN" | firebase login:ci --token "$FIREBASE_TOKEN"
+
+          # IMPORTANT: isolate target using hosting id for this client
+          # Set the target id via repository config/constant.
+          # Option A: keep it as a repo variable already named ID_DO_SITE_DELE.
+          # Option B: bake a fixed value per client repository.
+          :
+          firebase deploy --only hosting:${{ vars.ID_DO_SITE_DELE || 'ID_DO_SITE_DELE' }}
+

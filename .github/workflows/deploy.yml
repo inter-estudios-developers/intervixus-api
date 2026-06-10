@@ -27,17 +27,29 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
-          if [ -z "$FIREBASE_TOKEN" ]; then
+          set -euo pipefail
+
+          if [ -z "${FIREBASE_TOKEN}" ]; then
             echo "Missing FIREBASE_TOKEN secret";
             exit 1;
           fi
-          firebase --version
-          echo "$FIREBASE_TOKEN" | firebase login:ci --token "$FIREBASE_TOKEN"
 
-          # IMPORTANT: isolate target using hosting id for this client
-          # Set the target id via repository config/constant.
-          # Option A: keep it as a repo variable already named ID_DO_SITE_DELE.
-          # Option B: bake a fixed value per client repository.
-          :
-          firebase deploy --only hosting:${{ vars.ID_DO_SITE_DELE || 'ID_DO_SITE_DELE' }}
+          echo "Installing Firebase CLI..."
+          firebase --version || true
+
+          # Non-interactive authentication for GitHub Actions.
+          # Using the token directly avoids browser-based login.
+          firebase login:ci --token "${FIREBASE_TOKEN}"
+
+          # IMPORTANT: Isolate deploy strictly to this client's Hosting target.
+          # The actual value MUST be defined in the client's repository.
+          # Recommended: set a repo variable named ID_DO_SITE_DELE.
+          TARGET_ID="${{ vars.ID_DO_SITE_DELE }}"
+          if [ -z "${TARGET_ID}" ] || [ "${TARGET_ID}" = "ID_DO_SITE_DELE" ]; then
+            echo "Hosting target id (ID_DO_SITE_DELE) is not set correctly in the client repo.";
+            exit 1;
+          fi
+
+          firebase deploy --only "hosting:${TARGET_ID}"
+
 

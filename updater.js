@@ -24,7 +24,7 @@
       "tópico 2"
     ],
     "version": "4.0",
-    "download_irl": "Github Releases ou Google Drive",
+    "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/INS-V3/Intervixus.TUBE.Setup.3.0.0.exe",
     "iconUpdate": "URL direta do ícone, ou caminho do navegador (ícone)",
     "tag": "bet"
   },

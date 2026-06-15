@@ -1,6 +1,6 @@
 {
   "By_global_updates": "Intervixus Update VX",
-  "version_updater": "1.0",
+  "version_updater": "4.0",
   "politic_global": false,
   "Android": {
     "app_name": "Intervixus TUBE",

@@ -15,7 +15,7 @@
   },
   "categories": {
     "PC": {
-      "latest_version": "4.0.0",
+      "latest_version": "3.0.0",
       "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/INS-V3/Intervixus.TUBE.Setup.3.0.0.exe",
       "mandatory_update": false,
       "changelog": [

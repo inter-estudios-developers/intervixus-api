@@ -7,38 +7,22 @@
     "package_id": "com.intervixus.tube",
     "description": "BUILD teste",
     "Topic": [
-      "Tópico 1",
-      "tópico 2"
+      "Topico 1",
+      "Topico 2"
     ],
     "version": "4.0",
-    "download_irl": "Github Releases ou Google Drive",
-    "iconUpdate": "URL direta do ícone, ou caminho do navegador (ícone)",
-    "tag": "bet"
+    "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/latest"
   },
-  "Pc": {
-    "app_name": "Intervixus TUBE for PC",
-    "package_id": "com.intervixus.tube",
-    "description": "BUILD teste",
-    "Topic": [
-      "Tópico 1",
-      "tópico 2"
-    ],
-    "version": "4.0",
-    "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/download/INS-V3/Intervixus.TUBE.Setup.3.0.0.exe",
-    "iconUpdate": "URL direta do ícone, ou caminho do navegador (ícone)",
-    "tag": "bet"
-  },
-  "Tv": {
-    "app_name": "Intervixus TUBE",
-    "package_id": "com.intervixus.tube",
-    "description": "BUILD teste",
-    "Topic": [
-      "Tópico 1",
-      "tópico 2"
-    ],
-    "version": "4.0",
-    "download_irl": "Github Releases ou Google Drive",
-    "iconUpdate": "URL direta do ícone, ou caminho do navegador (ícone)",
-    "tag": "bet"
+  "categories": {
+    "PC": {
+      "latest_version": "3.0.0",
+      "download_url": "https://github.com/inter-estudios-developers/intervixus-api/releases/latest",
+      "mandatory_update": false,
+      "changelog": [
+        "Versao inicial com Intervixus Updater VX",
+        "Motor de download de midia integrado",
+        "Bloqueador de anuncios Ghostery ativo"
+      ]
+    }
   }
 }
